@@ -2,16 +2,93 @@
 
 \usepackage[colorlinks=true,urlcolor=blue]{hyperref}
 
-\author{Edzer Pebesma}
-\date{\today}
+\author{Edzer Pebesma\footnote{{\tt edzer.pebesma@uni-muenster.de}}}
+\date{Version 0.1, \today}
 \title{\bf The Software Paper}
 
 \begin{document}
 \maketitle
 
 \section{Introduction}
+Today, many scientific papers are based upon scientific
+computing, which in turn is based on using scientific
+software. Increasingly, developing original scientific
+software is an integral part of the process that leads to
+obtaining new scientific insights The {\em research software impact
+manifesto}\footnote{\url{http://software.ac.uk/blog/2011-05-02-publish-or-be-damned-alternative-impact-manifesto-research-software}}
+sais that {\em software has become the third pillar of research,
+supporting theory and experiment.}
+
+The {\em software paper} is a specific type of scientific paper
+that describes an original scientific software contribution to (i)
+helps other scientists reproduce previously published and carry
+out new research, (ii) increase the transparency of (previous and
+future) scientific research, and (iii) allow proper citing of the
+software contribution when used in consecutive papers. This paper
+describes the software paper, its rationale, its requirements,
+and recommendations. It may yield a blueprint for software papers
+published in {\em Computers \& Geosciences}.
+
+\section{Rationale}
+
+(How does the software paper differ from standard documentation?)
+
+manual - tutorial - design paper
+
+software paper describes the originality or scientific contribution,
+describes the context
+
 \section{Requirements}
+\begin{description}
+\item[originality] the paper should point out why the software contribution
+is original, and how it improves over existing solutions: why was there
+a need to develop this software.
+\item[context] the paper should point how the software developed
+relates or compares to existing solutions, and how existing solutions
+were integrated or re-used.
+\item[source code] a pointer to the source code, either a file with
+a tar ball, or a repository (git, subversion).
+\item [availability] the software should be made available to the 
+reviewers, meaning that it is part of the paper at time of first
+submission.
+\item[readability] the software should should be readable, have comments
+in place where relevant, and be written having in mind that others would
+want to understand it.
+\item[version] version number of source code, revision ID of SCM system
+\item[examples] should show input, interaction (if any), and output;
+the examples should be easily reproducible with the source code available.
+\item[citing] the paper should cite all relevant software mentioned, 
+or used to build the software described.
+\item[portability] the paper should describe on which operating systems
+and/or computing platforms the software runs
+\item[copyright, license] the paper and software should both
+clearly state where the copyrights lies, and under which license
+it is distributed
+
+\end{description}
+
+\subsection{Requirements to reviewers}
+Reviewers should primarily review the paper, but also address the
+software described. Minimum checks include:
+\begin{itemize}
+\item can the software be downloaded?
+\item can the software be installed, and run?
+\item can the examples be run?
+\end{itemize}
+The reviewers should address the question whether the contribution
+of the software paper is original, substantial, and sufficiently
+embedded in the context of existing solutions and/or embedding
+environments.
+
 \section{Recommendations}
+Author(s) should collect user feed-back before publication; report
+on user feed-back. Discuss usability.
+
+((See Hyndman blog))
+
+\section{Discussion}
+Persistence of web sites, and of links
+
 \section{Links}
 
 \begin{itemize}
