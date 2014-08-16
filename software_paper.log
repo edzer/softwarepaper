@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.13)  13 AUG 2014 19:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.8.13)  16 AUG 2014 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -233,29 +233,22 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
  [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
 
 (./software_paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
-
-
-Package rerunfilecheck Warning: File `software_paper.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `software_paper.out':
-(rerunfilecheck)             Before: A52E93336AA51918B46E14DBCBA0ADBC;214
-(rerunfilecheck)             After:  9C19956782C3AD655BEFAEF17C6F75C3;347.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
+Package rerunfilecheck Info: File `software_paper.out' has not changed.
+(rerunfilecheck)             Checksum: 9C19956782C3AD655BEFAEF17C6F75C3;347.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
  ) 
 Here is how much of TeX's memory you used:
- 4861 strings out of 495032
- 71935 string characters out of 6181718
- 150305 words of memory out of 5000000
- 8062 multiletter control sequences out of 15000+600000
+ 4863 strings out of 495032
+ 71962 string characters out of 6181718
+ 150409 words of memory out of 5000000
+ 8064 multiletter control sequences out of 15000+600000
  8884 words of font info for 32 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  31i,11n,28p,206b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -271,9 +264,9 @@ fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
 
-Output written on software_paper.pdf (3 pages, 142320 bytes).
+Output written on software_paper.pdf (3 pages, 142791 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
+ 103 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
