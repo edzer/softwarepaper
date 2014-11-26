@@ -4,7 +4,7 @@
 
 \author{Edzer Pebesma\footnote{{\tt edzer.pebesma@uni-muenster.de}}}
 \date{Version 0.1, \today}
-\title{\bf The Software Paper}
+\title{\bf Software Papers in \\ Computers \& Geosciences}
 
 \begin{document}
 \maketitle
@@ -14,57 +14,86 @@ Today, many scientific papers are based upon scientific
 computing, which in turn is based on using scientific
 software. Increasingly, developing original scientific
 software is an integral part of the process that leads to
-obtaining new scientific insights The {\em research software impact
+obtaining new scientific insights. The {\em research software impact
 manifesto}\footnote{\url{http://software.ac.uk/blog/2011-05-02-publish-or-be-damned-alternative-impact-manifesto-research-software}}
-sais that {\em software has become the third pillar of research,
-supporting theory and experiment.}
+for instance argues that {\em software has become the third pillar
+of research, supporting theory and experiment.}
 
-The {\em software paper} is a specific type of scientific paper
-that describes an original scientific software contribution to (i)
-helps other scientists reproduce previously published and carry
-out new research, (ii) increase the transparency of (previous and
-future) scientific research, and (iii) allow proper citing of the
-software contribution when used in consecutive papers. This paper
-describes the software paper, its rationale, its requirements,
-and recommendations. It may yield a blueprint for software papers
-published in {\em Computers \& Geosciences}.
+We describe the {\em software paper} as a specific type of scientific
+paper that describes an original scientific software contribution
+which has the goals to (i) help other scientists understand
+and reproduce previously published research, (ii) increase the
+transparency of the scientific research where the software was used,
+(iii) allow reuse of the software to carry out new research, and
+(iv) allow proper citing of the software contribution, e.g. when
+it is used in consecutive papers. Following goal (ii), we will
+only consider papers describing open source software.  We describe
+the {\em software paper}, its purpose, its requirements, and
+recommendations. We aim at providing a blueprint for future software
+papers published in {\em Computers \& Geosciences}, or elsewhere. It
+has consequences to the review process, as reviewers should address
+the software published too.
 
-\section{Rationale}
+\section{Purpose}
 
-(How does the software paper differ from standard documentation?)
+A {\em software paper}, as described here, needs to be an original
+scientific contribution. Where usual scientific paper describe
+novel theories or findings that follow from analysing data, the
+software paper describes original scientific software. As with all
+scientific papers, the paper should describe the software in the
+context of previous work. It should argue why there was a need
+for the software, describe similar or competing solutions, and
+demonstrate the use of the software. It should properly reference
+the relevant related literature, be it other software papers or
+papers where the software described was put into practice. It should
+also discuss the virtues of the software, and describe its use,
+and the user experiences.
 
-manual - tutorial - design paper
-
-software paper describes the originality or scientific contribution,
-describes the context
+% manual - tutorial - design paper
+% software paper describes the originality or scientific contribution,
+% describes the context
 
 \section{Requirements}
+The following minimum requirements need to be maintained in order
+to obtain comprehensive description of the software publishe.
 \begin{description}
-\item[originality] the paper should point out why the software contribution
-is original, and how it improves over existing solutions: why was there
-a need to develop this software.
-\item[context] the paper should point how the software developed
+\item[originality] The paper should point out why the software
+contribution is original, and how it improves over existing
+solutions. It should answer the question why there was a 
+need to develop the software.
+\item[context] The paper should point how the software developed
 relates or compares to existing solutions, and how existing solutions
 were integrated or re-used.
-\item[source code] a pointer to the source code, either a file with
-a tar ball, or a repository (git, subversion).
-\item [availability] the software should be made available to the 
-reviewers, meaning that it is part of the paper at time of first
-submission.
-\item[readability] the software should should be readable, have comments
+\item[source code] A pointer should be given to the source code, 
+which can either be a URL pointing to a tar ball, 
+more typicall a source code repository (git, subversion). 
+\item[versioning] The paper
+should clearly mention which version of the software is described,
+either encoded in the file name, or as the tag, revision, or commit
+number identifier in a repository.
+\item [availability] The software should be available to the 
+reviewers at the time of submitting the paper, in source code form, 
+meaning that it is part of the paper at time of first submission, 
+and subject to review.
+\item[readability] The software should should be readable, have comments
 in place where relevant, and be written having in mind that others would
-want to understand it.
-\item[version] version number of source code, revision ID of SCM system
-\item[examples] should show input, interaction (if any), and output;
-the examples should be easily reproducible with the source code available.
-\item[citing] the paper should cite all relevant software mentioned, 
-or used to build the software described.
-\item[portability] the paper should describe on which operating systems
-and/or computing platforms the software runs
-\item[copyright, license] the paper and software should both
-clearly state where the copyrights lies, and under which license
-it is distributed
-
+want to understand it. The software should be organized in a way that makes
+it useful for prospective users.
+\item [portability] The paper should describe the platform(s) targeted
+by the software, and describe {\em requirements} for installing, compiling (if
+needed) and running the software. Complete {\em instructions} for installing
+the software are not needed in the paper, but should be easily identifiable
+(e.g. in README files) in the source code itself.
+\item[examples] The paper should demonstrate show how the software works
+with real examples, describing input, interaction (if any), and output.
+The examples should be easily reproducible with the source code available.
+\item[citing] The paper should cite all relevant software mentioned, 
+or used to build the software described. This does not include generic
+tools (like {\tt make}, or {\tt libc}) used for most software, but specific
+tools on which the described software critically depends.
+\item[copyright, license] The paper and software should both
+clearly state who owns the copyrights, and under which license
+it is distributed.
 \end{description}
 
 \subsection{Requirements to reviewers}
@@ -73,24 +102,55 @@ software described. Minimum checks include:
 \begin{itemize}
 \item can the software be downloaded?
 \item can the software be installed, and run?
-\item can the examples be run?
+\item does it run the examples shown in the paper?
 \end{itemize}
 The reviewers should address the question whether the contribution
 of the software paper is original, substantial, and sufficiently
-embedded in the context of existing solutions and/or embedding
-environments.
-
-\section{Recommendations}
-Author(s) should collect user feed-back before publication; report
-on user feed-back. Discuss usability.
-
-((See Hyndman blog))
+embedded and/or discussed in the context of existing solutions
+and/or embedding environments.
 
 \section{Discussion}
+Research software is rarely written with the main purpose of writing
+a paper about it, and publishing this. Doing this nevertheless makes
+only sense if the author believes that a certain readership is helped
+with this, and will be inclined to read and hopefully cite the paper.
+Citations may be seen as a reward that users are typically inclined
+(if not morally obliged) to give when they use the software described
+for their scientific work. Although direct pointers to the software
+itself, e.g. by URLs, tags like CRAN:packagename\footnote{TODO},
+or DOIs pointing to the software\footnote{DOI-from-github-TODO}
+in the paper, from a software paper the readership may expect
+that the software has been properly described and discussed for a
+scientific audience.
+
+In general, it is recommended that authors write a software paper
+after a certain amount of user feed-back has been collected,
+and after the software has reached a certain stability. This
+allows to report on usage, user feedback, and reflect on
+its usability\footnote{HyndManBlogJSS}. Needless to say, publishing
+software requires properly paying attention to software testing,
+naming conventions, organisation, complexity, scalability,
+intelligable comments and user documentation, and so on.
+
+It is not unusual that research software is being further developed
+after a paper on it has been published; the paper is usually does
+not allow updating. It is therefore useful that a fixed version
+that matches the published paper is identifiable; this can be done
+by a source code git clone made by the journal editor (Computers
+\& Geosciences), or by a full copy of the software (Journal of
+Statistical Software). Alternatively, an updated copy of the paper
+can be provided by the software author, along with the software, as
+is often done with vignettes accompanying R packages\cite{xx}.
+
 Persistence of web sites, and of links
 
-\section{Links}
+long-term curation and github.
 
+[pointers to other descriptions of / requirements to software papers]
+
+
+
+\section{Links}
 
 \begin{itemize}
 \item \url{http://software.ac.uk/so-exactly-what-software-did-you-use}
